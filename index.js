@@ -46,6 +46,7 @@ app.get('/list-paths', async (req, res) => {
   }
 });
 
+// Uruchomienie aplikacji na zadanym porcie
 app.listen(PORT, () => {
   console.log(`Serwer działa na porcie ${PORT}`);
 });

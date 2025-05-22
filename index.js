@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.get('/fetch-adeco-text', async (req, res) => {
   try {
     const url = req.query.url;
-    if (!url || !url.startsWith('https://adeco.shop/')) {
+    if (!url || !url.startsWith('https://adeco.shop')) {
       return res.status(400).send('Nieprawidłowy adres URL');
     }
 

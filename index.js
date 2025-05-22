@@ -26,7 +26,7 @@ app.get('/fetch-adeco-text', async (req, res) => {
 // Endpoint: /list-paths
 app.get('/list-paths', async (req, res) => {
   try {
-    const xmlUrl = 'https://sklep821434.shoparena.pl/console/integration/execute/name/GoogleSitemap';
+    const xmlUrl = 'https://adeco.shop/console/integration/execute/name/GoogleSitemap/list/products/locale/pl_PL/page/1';
     const xmlRes = await axios.get(xmlUrl);
     const parser = new XMLParser({ ignoreAttributes: false });
     const parsed = parser.parse(xmlRes.data);
